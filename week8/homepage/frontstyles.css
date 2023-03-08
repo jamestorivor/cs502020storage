@@ -1,0 +1,26 @@
+#backing{
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/homepage/front_pic.jpg) no-repeat center/cover;
+    min-height:650px;
+
+}
+
+.indent{
+    margin-left: 100px;
+    margin-top: 100px;
+    font-family: "varela round";
+    font-weight: 500;
+    color: white;
+}
+
+.space{
+    margin-top: 20px;
+}
+
+#btn-space{
+    margin-bottom: 5px;
+}
+
+#long-btn{
+    padding-left: 25px;
+    padding-right: 25px;
+}

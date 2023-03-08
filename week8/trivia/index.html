@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            //Only run this code when DOM is loaded
+            window.addEventListener('load', function() {
+
+                //for correct answer in part 1
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function() {
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector('#feedback1').innerHTML = 'Correct!';
+                });
+
+                //for incorrect answer in part 1
+                let incorrects = document.querySelectorAll('.incorrect');
+                for(let i = 0; i < incorrects.length; i++) {
+                    incorrects[i].addEventListener('click', function() {
+                        incorrects[i].style.backgroundColor = 'red';
+                        document.querySelector('#feedback1').innerHTML= 'Incorrect!';
+                    });
+                }
+
+                //Free response question answer checking
+                document.querySelector('#check').addEventListener('click', function() {
+                    let input = document.querySelector('#input');
+                    if (input.value.toLowerCase() === 'switzerland') {
+                        input.style.backgroundColor = 'Green';
+                        document.querySelector('#feedback2').innerHTML = 'Correct!';
+                    } else {
+                        input.style.backgroundColor = 'Red';
+                        document.querySelector('#feedback2').innerHTML = 'Incorrect!';
+                    }
+                });
+            });
+            // TODO: Add code to check answers to questions
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Question: What is cynophobia?</h3>
+
+                <button class="incorrect">Fear of cyanide</button>
+                <button class="correct">Fear of dogs</button>
+                <button class="incorrect">Fear of olives</button>
+                <button class="incorrect">Fear of cynicism</button>
+
+                <p id="feedback1"></p>
+                <!-- TODO: Add multiple choice question here -->
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>In 1815, where was the first commercial cheese factory established?</h3>
+                <input id="input" type="text" autocomplete="off" placeholder="click cheese to submit">
+                <input id="check" type="image" src="cheese.png">
+
+                <p id="feedback2"></p>
+                <!-- TODO: Add free response question here -->
+            </div>
+        </div>
+    </body>
+</html>

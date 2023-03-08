@@ -1,0 +1,96 @@
+
+.container{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    top: 10vh;
+}
+
+#navbar ul li a:hover{
+    text-decoration: underline orange;
+}
+
+.ec3a{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    background:linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(/homepage/SAJC.png) no-repeat center/cover ;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.ec3a p{
+    font-size: 15px;
+}
+
+
+.title_pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.grid-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.ec3b{
+    width: 400px;
+    height: 350px;
+    font-size: small;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card-img-top {
+    min-width: 330px;
+    min-height: 190px;
+    max-height: 210px;
+    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    object-fit: cover;
+    }
+
+#foot-title{
+    font-weight: 600;
+    font-family: "varela round";
+    text-decoration: underline orange;
+    text-align: center;
+}
+
+.no-dots{
+    list-style-type: none;
+    margin-left: 0;
+    text-align: center;
+    padding-left:0;
+}
+
+.no-dots li a{
+    text-decoration: none;
+}
+
+.no-dots li a:hover{
+    text-decoration:underline orange !important;
+    color: orange !important;
+}
+
+.no-dots li a{
+    color: white;
+}
+
+footer .container{
+    background: #20272e;
+    max-width: 1900px;
+}
+
+#webtitle{
+    background-color: #20272e;
+}

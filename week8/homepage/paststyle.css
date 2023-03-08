@@ -1,0 +1,62 @@
+.pg2font{
+    font-family: "varela round";
+    text-align: center;
+}
+
+.break-bar{
+    margin: auto;
+    height:2.5px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: black;
+    border-radius: 25px;
+}
+
+
+#percyimg{
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0 0 0 15px;
+    overflow: hidden;
+
+}
+
+#past-tense{
+    color: black;
+    margin-bottom: 10px;
+}
+
+#justhead{
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+#ec5x{
+    margin-top: 50px;
+    word-wrap: normal;
+    display: block;
+    max-width: 900px;
+    margin:auto;
+}
+
+/* #ec5x p{
+    max-width: 1000px;
+    margin-left: 150px;
+    text-align: justify;
+}
+
+#ec5x g{
+    max-width: 1000px;
+    margin-left: 150px;
+    text-align: justify;
+} */
+
+
+
+footer .container{
+    background: #20272e;
+    max-width: 1900px;
+}

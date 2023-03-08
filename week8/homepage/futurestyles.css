@@ -1,0 +1,152 @@
+
+.flex-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.future-bg{
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/homepage/future-bg.jpg) center/cover no-repeat;
+    color: white;
+    font-family: "Varela Round";
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#first-pic-tle{
+    text-decoration: underline;
+    font-weight: 800;
+    flex-grow: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#first-content{
+    flex-grow: 5;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#second-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 3;
+}
+
+#second-content{
+    flex-grow : 3;
+    margin-left: 10px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#second-title{
+    flex-grow: 8;
+    text-decoration: underline;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#third-pic-tle{
+    flex-grow: 5;
+    font-weight: 800;
+    text-decoration: underline;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#third-content{
+    flex-grow: 12;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+
+.sec-void{
+    margin-bottom: 150px;
+    margin-top : 100px
+}
+
+.img-size{
+    max-width: 450px;
+    max-height: 240px;
+    box-shadow: 10px 10px 15px #000000;
+    border-radius: 7px;
+}
+
+.img-size2{
+    min-width: 430px;
+    max-height: 240px;
+    box-shadow: 10px 10px 15px #000000;
+    border-radius: 7px;
+
+}
+
+#contact-me{
+    text-align: center;
+}
+
+#contact-me :first-child{
+    font-size: 3em;
+}
+
+#contact-me :nth-child(4){
+    width: 20%;
+    border-radius: 5px;
+    border: none;
+    line-height: 1.5em;
+}
+
+#contact-me h3{
+    margin-bottom: 10px;
+}
+
+#contact-me > button{
+    border:none;
+    border-radius: 5px;
+    line-height: 1.5em;
+}
+
+#contact-bar{
+    margin: auto;
+    height:2.5px;
+    max-width: 950px;
+    min-width: 300px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.reveal{
+    position: relative;
+    opacity: 0;
+    transform: translateY(150px);
+}
+
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 2s ease;
+}
