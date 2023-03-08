@@ -1,0 +1,145 @@
+h1: :hover{
+    /* Insert code when hovered over */
+}
+
+li: :first-child{
+    /* for all the first child of any li apply this code */
+}
+
+li: :last-child{
+    /* for all the last chiild of any li apply this code */
+}
+
+li :nth-child(n){
+    /* for the nth child of all li apply this code */
+}
+
+li: :only-child
+{
+    /* If there are li's with only-child, apply this code */
+}
+
+#google-link: :visited{
+    /* for a link that is already visited, apply this code */
+}
+
+#google-link:link{
+    /* before link is visited, apply this code */
+}
+
+h2 + a{
+    /* if there is an a that follows a h2, apply this code */
+}
+
+a ~ element{
+    /* every element under a will have this code applied */
+}
+
+ul> li{
+    /* child selector */
+}
+
+ul li{
+    /* descendent selector */
+}
+
+img[src ^= "../img/..."]
+/*
+^= starts with
+$= ends with
+*= contains
+*/
+
+.text-color{
+    color: rgb(value,vlaue,value);
+    color: rgba(value,vlaue,value,value);
+    /* the a in rgba represents the opacity where by 0.1 = 10% */
+    color: #hexadecimal;
+}
+
+.background-color{
+    background: rgb(value,vlaue,value);
+    /* This will set the color of the background */
+}
+
+.background-images{
+    background: url(...);
+    /* This will set the background image to the image url */
+    background-repeat: no-repeat;
+    background-size: height, width;
+    background-size: cover or contain;
+}
+
+.gradients{
+    background: linear-gradient(top,bottom,left,right);
+    background: (to right,color,color,color);
+    /* Picxking the direction for diagonal gradients */
+    background: radial-gradient(red 20%, blue 40%);
+    background: radial-gradient(circle,0,0,0)
+}
+
+.text-manipulation{
+    text-decoration: none, underline,line-through, overline;
+    text-transform: capitalize, uppercase, lowercase;
+    text-align: center, left, right, justify;
+    font-size: 1.25em;
+    /* em is the unit relative to current font size */
+    font-weight: 100-800;(chages the thickness of the font)
+    font-style: normal, italic, oblique ;
+    font-family: "Times New Roman", sans-serif;
+    /* remember to insert link above stylesheet */
+}
+
+.css-layout{
+    border: size, style, color;
+    padding: 20px;
+    margin:20px;
+    /* for both margin and padding, the side which it is applied to
+    can be selected by adding -left */
+    padding: top right bottom left;
+}
+
+.display-type{
+    float: right;
+    display: inline, block, none, inline-block;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row/column;
+    /* add -reverse to row or column to reverse the direction of elements */
+    flex-wrap: wrap, wrap-reverse, nowrap;
+    justify-content: center, flex-end,flex-start, space-between, space-around;
+    align-items: flex-end, flex-start, center, baseline, stretch;
+    flex-grow: 0 to howevermanypx;
+    flex-shrink: 0 to howevermanypx;
+    flex-basis: 100px;
+    flex: grow, shrink, basis;
+    align-self: flex-end, flex-start, center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center, end, start, space-around, space-evenly;
+    grid-column-gap: 150px;
+    grid-row-gap: 300px;
+    grid-gap: row column;
+    grid-column: 1/3 or 1/span 2;
+    grid-row: 1/3 or 1/span 2;
+    grid-area: rowstart/column start/row end/ column end;
+}
+
+.transition{
+    transition: 2s, ease, linear, ease-in-out, 1s;
+    /* format is duration, 3 type of transitions, delay */
+    transform: (x axis, y axis), scale(), rotate(), skewX(deg), skewY(deg)
+    transform: matrix();
+    /* format for matrix : scaleX, skewY, skewX, scaleY, translateX, tanslateY */
+}
+
+@keyframes translate-elements {
+    from{background-color: red;}
+    to{background-color: black;}
+}

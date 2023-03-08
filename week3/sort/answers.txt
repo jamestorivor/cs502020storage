@@ -1,0 +1,14 @@
+sort1 uses: Bubble sort
+
+How do you know?: When sorting already sorted numbers, which is the best case scenario, sort1 sorts much faster than sort3, thus sort 1 is
+bubble sort
+
+sort2 uses: Merge sort
+
+How do you know?: when sorting random numbers, sort2 will be faster most of the time than sort1 and sort3 and gives a relatively constant
+sorting time
+
+sort3 uses: Selection sort
+
+How do you know?: When sorting random numbers, already sorted numbers and reversed numbers, sort3 has a similar run time for each. since selection
+sort has O and Ω being similar
