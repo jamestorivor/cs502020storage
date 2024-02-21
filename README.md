@@ -10,4 +10,4 @@ I learnt alot from cs50x and cs50python
 My biggest takeaway is the basic understanding of languages and coding in general
 The 2 courses have taught me how to code but not how to programme
 
-Looking forward to creating more repositories that dont suck as much as this one
+Looking forward to creating more repositories that are not as bad as this one 
